@@ -12,15 +12,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <!-- <link rel="stylesheet" href="style/index.css"> -->
     <title>Головна</title>
 </head>
 
+<style>
+    @import url('style/header.css');
+    @import url('style/footer.css');
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #list li {
+        list-style-type: circle;
+    }
+
+    #list > img {
+        width: 100%;
+        max-width: 40%;
+        height: 20%;
+        object-fit: cover;
+        float: left;
+        margin: 0px 100px;
+        vertical-align: middle
+    }
+</style>
 
 <body>
-
     <div class="header">
         <div id="topHeader">
             <div class="logo">
@@ -42,9 +61,9 @@
             </span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <div class="headerButton">
+            <a class="headerButton" href="index.html">
                 <p>ГОЛОВНА</p>
-            </div>
+            </a>
             <div class="dropdown headerButton">
                 <a class="headerButton1" href="products.html">
                     <p>КАТЕГОРІЇ</p>
@@ -61,9 +80,9 @@
                     <a href="#">ХУТРО</a>
                 </div>
             </div>
-            <a class="headerButton" href="aboutUs.html">
-                    <p>ПРО НАС</p>
-            </a>
+            <div class="headerButton">
+                <p>ПРО НАС</p>
+            </div>
             <div class="headerButton">
                 <p>ДОСТАВКА</p>
             </div>
@@ -73,63 +92,27 @@
         </div>
     </nav>
 
-    <div id="baner">
-        <img src="https://minimal.com.ua/wp-content/uploads/2020/08/RD-11.jpg" />
-    </div>
-    <br />
+    <div id="body" style="padding: 100px 40px">
 
-    <div id="categories">
-        <h2>КАТЕГОРІЇ</h2>
-        <div class="categorieRow row no-gutters">
-            <div class="col-md-7">
-                <div class="big">
-                    <div class="img-wrap">
-                        <img class="categorie" src="380473_1.jpg" />
-                        <h1>КУРТКИ</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="small">
-                    <div class="img-wrap">
-                        <img class="categorie"
-                            src="https://women-tusovka.ru/wp-content/uploads/2018/03/ustarevshij-fason-palto-ot-kakix-modelej-stoit-otkazatsya-1.jpg" />
-                    </div>
-                    <h1>ПАЛЬТА</h1>
-                </div>
-            </div>
-        </div>
-        <div class="categorieRow row no-gutters">
-            <div class="col-md-5">
-                <div class="small">
-                    <div class="img-wrap">
-                        <img class="categorie" src="https://blog.shafa.ua/wp-content/uploads/2019/04/1.jpg" />
-                        <h1 id="font-etalon">ЖАКЕТИ</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="big">
-                    <div class="img-wrap">
-                        <img class="categorie" src="https://cutur.ru/wp-content/uploads/_pu/0/02816383.jpg" />
-                        <h1>СВЕТРИ</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="categorieRow row no-gutters align-items-center justify-content-center">
-            <div class="col-12">
-                <div class="theBig">
-                    <div class="img-wrap">
-                        <img class="categorie" src="https://images.ua.prom.st/2227446562_2227446562.jpg" />
-                        <h1>ХУТРО</h1>
-                    </div>
-                </div>
-            </div>
+        <div id="list">
+            <img src="http://www.vichealth.vic.gov.au/-/media/images/vichealth/youthstrategy1200x675.jpg">
+            <h3>Хто ми?</h3>
+            <ul>
+                <li>Ми компанія із багаторічним досвідом</li>
+                <li>Ми група дизайнерів, які втілюють в життя свої задуми</li>
+                <li>Ми професіонали з пошиву одягу</li>
+            </ul>
+            <h3>Що ми робимо?</h3>
+            <ul>
+                <li>Ми створюємо тренди в сфері одягу</li>
+                <li>Ми прагнемо доступності моди для усіх жінок</li>
+                <li>Ми втілюємо комфорт у нашому одязі</li>
+                <li>Ми працюємо для вас!</li>
+            </ul>
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" style="position: absolute; width:100%; bottom: -50px;">
         <div class="logo">
             <nobr style="color: #ffffff; margin: auto; vertical-align: middle; line-height: 150px;">Logo</nobr>
         </div>
@@ -143,11 +126,9 @@
             <i class="fas fa-phone-square-alt"></i>
         </div>
     </footer>
-
 </body>
 
-
-<script src="index.js"></script>
+<script src="script/index.js"></script>
 <script src="https://kit.fontawesome.com/54144e2123.js"></script>
 
 
